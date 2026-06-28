@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "bookmatch-app-sdk54",
-    "slug": "bookmatch-app-sdk54",
+    "name": "BingeBook",
+    "slug": "bingebook",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "bookmatchappsdk54",
+    "scheme": "bingebook",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -38,11 +38,17 @@
             "backgroundColor": "#000000"
           }
         }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Allow BingeBook to use your camera for your profile picture.",
+          "photosPermission": "Allow BingeBook to choose a profile picture from your library."
+        }
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }
