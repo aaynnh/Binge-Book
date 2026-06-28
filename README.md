@@ -1,50 +1,65 @@
-# Welcome to your Expo app 👋
+# BingeBook
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+BingeBook is a swipe-based book discovery app that matches readers with books based on taste, mood, and reading habits.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Taste quiz onboarding
+- Personalized book deck
+- Swipe-based discovery
+- Book detail pages
+- Reading list
+- Profile with reading stats
+- Light and dark theme
+- Supabase authentication
+- Netlify web deployment
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- Expo
+- React Native
+- Expo Router
+- Supabase
+- Netlify
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+## Local Development
 
 ```bash
-npm run reset-project
+npm install
+npm run web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Web Build
 
-## Learn more
+```bash
+npm run build:web
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+The static web build is exported to:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```txt
+dist
+```
 
-## Join the community
+## Environment Variables
 
-Join our community of developers creating universal apps.
+Create a `.env` file:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
+EXPO_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+## Netlify Deployment
+
+Build command:
+
+```bash
+npm run build:web
+```
+
+Publish directory:
+
+```txt
+dist
+```
